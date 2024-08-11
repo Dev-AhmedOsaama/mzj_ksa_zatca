@@ -1,0 +1,382 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company",
+ "creation": "2024-02-14 04:41:43.222157",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_section_section",
+  "company",
+  "credential_files_section_section",
+  "private_key",
+  "public_key",
+  "column_break_bdnr",
+  "csr_key",
+  "csr_config",
+  "otp",
+  "column_break_ozyz",
+  "csid_key",
+  "certificate",
+  "secret",
+  "requestid",
+  "csr_config_section_section",
+  "common_name",
+  "egs_serial_number",
+  "organization_identifier",
+  "organization_unit_name",
+  "organization_name",
+  "column_break_vjwp",
+  "country_name",
+  "invoice_type",
+  "location",
+  "industry",
+  "email",
+  "environment_section_section",
+  "environment",
+  "sandbox_url",
+  "simulation_url",
+  "production_url",
+  "column_break_qxjy",
+  "certificate_template_name",
+  "invoice_tracking_section_section",
+  "icv",
+  "comp_csid",
+  "column_break_hgyn",
+  "pih",
+  "prod_csid",
+  "section_break_40",
+  "public_key_des",
+  "private_key_des",
+  "csr_key_des",
+  "csrconfig_des",
+  "csid_key_des",
+  "certificate_des",
+  "secret_des"
+ ],
+ "fields": [
+  {
+   "fieldname": "credential_files_section_section",
+   "fieldtype": "Section Break",
+   "label": "Credential Files Section"
+  },
+  {
+   "fieldname": "private_key",
+   "fieldtype": "Attach",
+   "label": "Private Key",
+   "read_only": 1
+  },
+  {
+   "fieldname": "public_key",
+   "fieldtype": "Attach",
+   "label": "Public Key",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_bdnr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "csr_key",
+   "fieldtype": "Attach",
+   "label": "CSR Key",
+   "read_only": 1
+  },
+  {
+   "fieldname": "csr_config",
+   "fieldtype": "Attach",
+   "label": "CSR Config",
+   "read_only": 1
+  },
+  {
+   "fieldname": "otp",
+   "fieldtype": "Data",
+   "label": "OTP"
+  },
+  {
+   "fieldname": "column_break_ozyz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "csid_key",
+   "fieldtype": "Attach",
+   "label": "CSID Key",
+   "read_only": 1
+  },
+  {
+   "fieldname": "csr_config_section_section",
+   "fieldtype": "Section Break",
+   "label": "CSR Config Section"
+  },
+  {
+   "description": "EX:TST-886431145-399999999900003",
+   "fieldname": "common_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Common Name",
+   "reqd": 1
+  },
+  {
+   "description": "EX:1-TST|2-TST|3-ed22f1d8-e6a2",
+   "fieldname": "egs_serial_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "EGS Serial Number",
+   "reqd": 1
+  },
+  {
+   "description": "EX:399999999900003",
+   "fieldname": "organization_identifier",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Organization Identifier",
+   "reqd": 1
+  },
+  {
+   "description": "EX:Riyadh Branch | \u0641\u0631\u0639 \u0627\u0644\u0631\u064a\u0627\u0636",
+   "fieldname": "organization_unit_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Organization Unit Name",
+   "reqd": 1
+  },
+  {
+   "description": "EX: Maximum Speed Tech Supply LTD |\u0634\u0631\u0643\u0629 \u062a\u0648\u0631\u064a\u062f \u0627\u0644\u062a\u0643\u0646\u0648\u0644\u0648\u062c\u064a\u0627 \u0628\u0623\u0642\u0635\u0649 \u0633\u0631\u0639\u0629 \u0627\u0644\u0645\u062d\u062f\u0648\u062f\u0629",
+   "fieldname": "organization_name",
+   "fieldtype": "Data",
+   "label": "Organization Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_vjwp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "EX: SA",
+   "fieldname": "country_name",
+   "fieldtype": "Data",
+   "label": "Country Name",
+   "reqd": 1
+  },
+  {
+   "description": "EX: 1000(BTB),0100(BTC),1100(BTB & BTC)",
+   "fieldname": "invoice_type",
+   "fieldtype": "Data",
+   "label": "Invoice Type",
+   "reqd": 1
+  },
+  {
+   "description": "EX:RRRD2929",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "reqd": 1
+  },
+  {
+   "description": "EX:Supply activities |\u0623\u0646\u0634\u0637\u0629 \u062a\u0648\u0631\u064a\u062f\u0627\u062a",
+   "fieldname": "industry",
+   "fieldtype": "Data",
+   "label": "Industry",
+   "reqd": 1
+  },
+  {
+   "fieldname": "environment_section_section",
+   "fieldtype": "Section Break",
+   "label": "Environment Section"
+  },
+  {
+   "fieldname": "environment",
+   "fieldtype": "Select",
+   "label": "Environment",
+   "options": "\nSandbox\nSimulation\nProduction",
+   "reqd": 1
+  },
+  {
+   "default": "https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation/",
+   "fieldname": "sandbox_url",
+   "fieldtype": "Data",
+   "label": "Sandbox url",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "https://gw-fatoora.zatca.gov.sa/e-invoicing/simulation/",
+   "fieldname": "simulation_url",
+   "fieldtype": "Data",
+   "label": "Simulation url",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "default": "https://gw-fatoora.zatca.gov.sa/e-invoicing/core/",
+   "fieldname": "production_url",
+   "fieldtype": "Data",
+   "label": "Production url",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "company_section_section",
+   "fieldtype": "Section Break",
+   "label": "Company Section"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "public_key_des",
+   "fieldtype": "Small Text",
+   "label": "Public Key Des",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "private_key_des",
+   "fieldtype": "Small Text",
+   "label": "Private Key Des",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "csr_key_des",
+   "fieldtype": "Small Text",
+   "label": "CSR Key Des",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "csrconfig_des",
+   "fieldtype": "Small Text",
+   "label": "CSR Config Des",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "csid_key_des",
+   "fieldtype": "Small Text",
+   "label": "CSID Key Des",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "no_copy": 1,
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "secret_des",
+   "fieldtype": "Small Text",
+   "label": "Secret Des",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "secret",
+   "fieldtype": "Attach",
+   "label": "Secret",
+   "read_only": 1
+  },
+  {
+   "fieldname": "requestid",
+   "fieldtype": "Data",
+   "label": "RequestID",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_qxjy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "PREZATCACode-Signing",
+   "fieldname": "certificate_template_name",
+   "fieldtype": "Data",
+   "label": "Certificate Template Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "invoice_tracking_section_section",
+   "fieldtype": "Section Break",
+   "label": "Invoice Tracking Section"
+  },
+  {
+   "default": "1",
+   "fieldname": "icv",
+   "fieldtype": "Int",
+   "label": "ICV",
+   "non_negative": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_hgyn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "NWZlY2ViNjZmZmM4NmYzOGQ5NTI3ODZjNmQ2OTZjNzljMmRiYzIzOWRkNGU5MWI0NjcyOWQ3M2EyN2ZiNTdlOQ==",
+   "fieldname": "pih",
+   "fieldtype": "Data",
+   "label": "PIH",
+   "read_only": 1
+  },
+  {
+   "fieldname": "certificate",
+   "fieldtype": "Attach",
+   "label": "Certificate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "certificate_des",
+   "fieldtype": "Small Text",
+   "label": "Certificate Des",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "comp_csid",
+   "fieldtype": "Check",
+   "label": "Comp Csid",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "prod_csid",
+   "fieldtype": "Check",
+   "label": "Prod Csid",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-20 02:31:15.278023",
+ "modified_by": "Administrator",
+ "module": "Ksa Zatca",
+ "name": "Zatca Config",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,22 @@
+[project]
+name = "ksa_zatca"
+authors = [
+    { name = "Ahmed Osama Ali", email = "ahmedosama.dev@gmail.com"}
+]
+description = "Ksa Zatca"
+requires-python = ">=3.08"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=13.0.0" # Installed and managed by bench.
+    "qrcode",
+    "ecdsa"
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"

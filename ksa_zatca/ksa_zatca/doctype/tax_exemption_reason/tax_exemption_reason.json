@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:code",
+ "creation": "2024-03-05 22:32:50.485190",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "code",
+  "reason_in_english",
+  "reason_in_arabic",
+  "tax_category"
+ ],
+ "fields": [
+  {
+   "fieldname": "code",
+   "fieldtype": "Data",
+   "label": "Code",
+   "unique": 1
+  },
+  {
+   "fieldname": "reason_in_arabic",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Reason In Arabic",
+   "max_height": "50px"
+  },
+  {
+   "fieldname": "reason_in_english",
+   "fieldtype": "Text",
+   "label": "Reason In English",
+   "max_height": "50px"
+  },
+  {
+   "fieldname": "tax_category",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tax Category",
+   "options": "S\nZ\nE\nO"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-03-07 15:12:01.678907",
+ "modified_by": "Administrator",
+ "module": "Ksa Zatca",
+ "name": "Tax Exemption Reason",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "reason_in_arabic"
+}
